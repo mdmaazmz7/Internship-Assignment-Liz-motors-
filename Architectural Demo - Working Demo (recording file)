@@ -1,0 +1,31 @@
+                +------------------+
+                |  Voice Input     |
+                |  (Microphone or  |
+                |  Audio File)     |
+                +--------+---------+
+                         |
+                         v
+                +------------------+
+                |  Voice-to-Text    |
+                |  Conversion       |
+                |  (Whisper)        |
+                +--------+---------+
+                         |
+                         v
+                +------------------+
+                |  Text Processing |
+                |  (LLM - Llama-2) |
+                +--------+---------+
+                         |
+                         v
+                +------------------+
+                |  Text-to-Speech   |
+                |  Conversion       |
+                |  (Edge-TTS)       |
+                +--------+---------+
+                         |
+                         v
+                +------------------+
+                |  Output Speech    |
+                |  (Audio File)     |
+                +------------------+
