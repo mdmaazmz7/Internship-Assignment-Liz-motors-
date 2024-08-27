@@ -1,0 +1,14 @@
++------------------+        +---------------------+        +------------------+        +---------------------+
+|  Voice Input     |        |   Voice-to-Text      |        |  Text Processing |        | Text-to-Speech       |
+|  (Microphone or  | -----> |   Conversion         | -----> |  using LLM       | -----> | Conversion           |
+|  Audio File)     |        |   (Whisper)          |        |  (e.g., Llama-2) |        |  (e.g., Edge-TTS)    |
++------------------+        +---------------------+        +------------------+        +---------------------+
+       |                         |                           |                           |
+       |                         |                           |                           |
+       V                         V                           V                           V
++------------------+        +---------------------+        +------------------+        +---------------------+
+|  Voice Activity  |        |  Transcribed Text   |        | Generated Text   |        |  Synthesized Speech |
+|  Detection (VAD) |        |  (e.g., "What is the|        | (e.g., "The time |        |  (.mp3 or .wav)      |
+|  (Filter Silence)|        |  time?")            |        |  is 3 PM.")       |        |                     |
++------------------+        +---------------------+        +------------------+        +---------------------+
+
